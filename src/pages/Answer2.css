@@ -1,0 +1,14 @@
+.ant-radio-inner {
+    color: #C83BE5 !important;
+    border: 1px solid #C83BE5 !important;
+}
+.ant-radio-inner:after {
+    background-color: #C83BE5 !important;
+}
+.ant-checkbox-inner {
+    color: #C83BE5 !important;
+    border: 1px solid #C83BE5 !important;
+}
+.ant-checkbox-inner:after {
+    background-color: #C83BE5 !important;
+}
