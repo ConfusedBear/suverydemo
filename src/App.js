@@ -12,6 +12,7 @@ import Answer5 from './pages/Answer5';
 import Answer6 from './pages/Answer6';
 import Answer8 from './pages/Answer8';
 import Answer9 from './pages/Answer9';
+import AnswerDemo1 from './pages/AnswerDemo1'
 
 
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path="/answer7" component={Answer7}/>
           <Route path="/answer8" component={Answer8}/>
           <Route path="/answer9" component={Answer9}/>
+          <Route path="/answerdemo" component={AnswerDemo1}/>
         </div>
       </Router>
     );

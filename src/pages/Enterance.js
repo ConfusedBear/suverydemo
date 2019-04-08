@@ -22,7 +22,7 @@ export default class Enterance extends Component {
         <Layout>
           <Content style={{ margin: '24px 16px' }}>
             <div style={{ padding: 13, background: '#fff' }} >
-              <Link to="/makesure" style={{color:"black"}}>
+              <Link to="/answerdemo" style={{color:"black"}}>
                 <Row type="flex" justify="start" align="top" style={{height:'45px'}}>
                   <Col span={3} />
                   <Col span={2}>
