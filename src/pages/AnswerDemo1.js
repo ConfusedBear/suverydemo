@@ -10,7 +10,24 @@ export default class AnswerDemo1 extends React.Component {
     super(props)
     this.state = {
       list: [
-        { "num": 2, "sum": 5, "title_type": 1, "title": ["这个问题你的答案是：", "对的吗", "那么对于那个问题您的答案还是", "是这样的吗"], "answer": ["man", "woman"], "checkboxAnswer": ["aaa", "bbb", "ccc", "ddd"] }
+        {
+          "sum": 5, "title_type": 5,
+          "title": ["问题5", "对的吗", "那么对于那个问题您的答案还是", "是这样的吗"],
+          "answer": ["man", "woman"],
+          "checkboxAnswer": ["aaa", "bbb", "ccc", "ddd"]
+        },
+        {
+          "sum": 5, "title_type": 2,
+          "title": ["问题2", "对的吗", "那么对于那个问题您的答案还是", "是这样的吗"],
+          "answer": ["man", "woman"],
+          "checkboxAnswer": ["aaa", "bbb", "ccc", "ddd"]
+        },
+        {
+          "sum": 5, "title_type": 1,
+          "title": ["问题1", "对的吗", "那么对于那个问题您的答案还是", "是这样的吗"],
+          "answer": ["man", "woman"],
+          "checkboxAnswer": ["aaa", "bbb", "ccc", "ddd"]
+        }
 
       ]
     }
@@ -22,14 +39,55 @@ export default class AnswerDemo1 extends React.Component {
         {
           this.state.list.map((item, index) => {
             return (
-              <QuestionDemo5
-                num={item["num"]}
-                sum={item["sum"]}
-                index={index}
-                title={item["title"]}
-                answer={item["answer"]}
-                checkboxAnswer={item["checkboxAnswer"]}
-              />
+              <div>
+                {(() => {
+                  switch (item["title_type"]) {
+                    case 1:
+                      return <QuestionDemo1
+                        sum={item["sum"]}
+                        index={index}
+                        title={item["title"]}
+                        answer={item["answer"]}
+                        checkboxAnswer={item["checkboxAnswer"]}
+                      />;
+                    case 2:
+                      return <QuestionDemo2
+                        sum={item["sum"]}
+                        index={index}
+                        title={item["title"]}
+                        answer={item["answer"]}
+                        checkboxAnswer={item["checkboxAnswer"]}
+                      />;
+                    case 3:
+                      return <QuestionDemo3
+                        sum={item["sum"]}
+                        index={index}
+                        title={item["title"]}
+                        answer={item["answer"]}
+                        checkboxAnswer={item["checkboxAnswer"]}
+                      />;
+                    case 4:
+                      return <QuestionDemo4
+                        sum={item["sum"]}
+                        index={index}
+                        title={item["title"]}
+                        answer={item["answer"]}
+                        checkboxAnswer={item["checkboxAnswer"]}
+                      />;
+                    case 5:
+                      return <QuestionDemo5
+                        sum={item["sum"]}
+                        index={index}
+                        title={item["title"]}
+                        answer={item["answer"]}
+                        checkboxAnswer={item["checkboxAnswer"]}
+                      />;
+                    default:
+                      return null
+                  }
+                }
+                )()}
+              </div>
             )
           })
         }

@@ -40,11 +40,11 @@ export default class QuestionDemo3 extends Component {
       <div>
         <div style={{ padding: '20px' }}>
           <div>
-            <Progress percent={this.props.num * (100 / this.props.sum)} showInfo={false} strokeColor="#C83BE5" />
+            <Progress percent={this.props.index+1 * (100 / this.props.sum)} showInfo={false} strokeColor="#C83BE5" />
           </div>
           <div style={{ padding: '0px 10px' }}>
             <div align="left" style={{ color: "#C83BE5" }}>
-              <span style={{ fontSize: 20 }}>{this.props.num}</span>
+              <span style={{ fontSize: 20 }}>{this.props.index+1}</span>
               <span style={{ fontSize: 5 }}>/{this.props.sum}</span>
             </div>
           </div>
