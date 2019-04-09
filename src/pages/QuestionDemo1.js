@@ -43,15 +43,6 @@ export default class QuestionDemo2 extends Component {
                 </RadioGroup>
               </div>
             </div>
-            <div style={{ marginTop: '100px', fontSize: 18 }}>
-              <Link to="/answer" style={{ color: "#4A4A4A" }}>
-                <b>上一题</b>
-              </Link>
-              <b style={{ margin: '0 30px' }}>/</b>
-              <Link to="/answer3" style={{ color: "#C83BE5" }} >
-                <b>下一题</b>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

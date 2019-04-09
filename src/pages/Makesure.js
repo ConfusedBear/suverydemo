@@ -36,7 +36,7 @@ export default class Makesure extends Component {
                         </div>
                     </div>
                     <div style={{ marginTop: '20px' }} align="center">
-                        <Link to="/answer" >
+                        <Link to="/answerdemo" >
                             <Button type="primary" style={{ width: '250px', backgroundColor: "#C83BE5", borderColor: "#C83BE5"}}>开始答题</Button>
                         </Link>
                     </div>
